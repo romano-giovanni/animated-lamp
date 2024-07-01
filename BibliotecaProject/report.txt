@@ -1,0 +1,2 @@
+Matricola: 0004, ISBN: 0003, Data inizio: 2024-06-20, Data fine: 2024-06-27
+Matricola: 0005, ISBN: 0005, Data inizio: 2024-06-20, Data fine: 2024-06-27
