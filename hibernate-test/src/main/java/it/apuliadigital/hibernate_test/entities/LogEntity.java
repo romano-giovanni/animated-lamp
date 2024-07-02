@@ -1,7 +1,9 @@
-package it.apuliadigital.hibernate_test;
+package it.apuliadigital.hibernate_test.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+
+import java.time.LocalDateTime;
 
 @Entity
 public class LogEntity {
@@ -10,14 +12,16 @@ public class LogEntity {
     private String id;
     private String path;
     private String message;
+    private LocalDateTime time;
 
     public LogEntity() {
     }
 
-    public LogEntity(String id, String path, String message) {
+    public LogEntity(String id, String path, String message, LocalDateTime time) {
         this.id = id;
         this.path = path;
         this.message = message;
+        this.time = time;
     }
 
     public String getId() {
@@ -42,5 +46,13 @@ public class LogEntity {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public LocalDateTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalDateTime time) {
+        this.time = time;
     }
 }
